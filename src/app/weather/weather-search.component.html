@@ -1,0 +1,11 @@
+<section class="weather-search" class="form-group">
+            <form (ngSubmit)="onSubmit(CityNameInput.value)">
+               <div class="form-group">
+                <label for="city">City Name:</label>
+                <input ngControl="location" class="form-control" type="text" placeholder="Toronto" id="city" (input)="onSearchLocation(cityNameInput.value)" required #cityNameInput >
+                </div>
+                <button class="btn btn-primary" type="submit">Forecast</button>        
+            </form>
+            <button class="btn btn-primary" (click)="typeSelected()"><span *ngIf="!selected">Imperial</span><span *ngIf="selected">Metric</span></button>          
+            <weather-list [WeatherForecastList]="weatherForecastData"></weather-list> 
+</section>
