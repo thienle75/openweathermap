@@ -22,14 +22,6 @@ export class WeatherListComponent implements OnInit {
 
   ngOnInit():any {
 
-  	//this.weathers = WEATHER_LIST;
-    //this.weathers = this._weatherService.getWeatherItems();
-    //console.log(cityName);
-
-    // this._weatherService.getWeatherForecast('Amritsar')
-    //      .subscribe(data => {this.weathers = data}, 
-    //                 error =>  this.errorMessage = <any>error
-    //  );
   }
 
 }
